@@ -29,5 +29,18 @@ osx, iterm2, fish shell, neovim
 
 ## Vim
 - vim-plug was used as the plugin manager. `https://github.com/junegunn/vim-plug`
-- I use my own fork of the nerdtree plugin which colorizes the the folders like atom does. Combined with the font and colors setup above vim should look like this:
-![Alt text](vim_screenshot.png?raw=true "atom like vim screenshot")
+- I use my own fork of the nerdtree plugin which colorizes the the folders like atom does. 
+
+  in my colors file there are def's for the nerdtree plugin. in the nerdtree git plugin there must be a change of the `hi def link` lines to:
+  ```
+    hi def link NERDTreeGitStatusUnmerged NERDTreeGitUnmerged
+    hi def link NERDTreeGitStatusModified NERDTreeGitModified
+    hi def link NERDTreeGitStatusAdded NERDTreeGitAdded
+    hi def link NERDTreeGitStatusRenamed  NERDTreeGitAdded
+    hi def link NERDTreeGitStatusDeleted NERDTreeGitDeleted
+    hi def link NERDTreeGitStatusUnknown NERDTreeGitUnknown
+    hi def link NERDTreeGitStatusDirDirty NERDTreeGitDirDirty
+    hi def link NERDTreeGitStatusDirClean NERDTreeGitDirClean
+  ```
+  Combined with the font and colors setup above vim should look like this:
+  ![Alt text](vim_screenshot.png?raw=true "atom like vim screenshot")

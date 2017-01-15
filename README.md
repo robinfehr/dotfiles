@@ -24,6 +24,8 @@ osx, iterm2, fish shell, neovim
 - download and istall neovim `https://neovim.io/`
 - setup alias for nvim to vim => see .bash_profile
 - setup git branch in prompt => see .brash_profile
+- copy the folders within the `config` folder to: `~/.config/`
+- install the vim plugins - see vim section below.
 
 ## Vim
 - vim-plug was used as the plugin manager. `https://github.com/junegunn/vim-plug`

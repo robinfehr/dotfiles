@@ -72,7 +72,7 @@ Plug 'vim-scripts/CursorLineCurrentWindow'                      " Only show the 
 Plug 'vim-scripts/syntaxudev.vim'                               " Syntax highlighting for udev rules files
 Plug 'wavded/vim-stylus'                                        " Styling of .styl fi.es
 Plug 'scrooloose/nerdtree'                                      " The well known nerd tree'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'                              " Git status flags for nerd tree
+Plug 'robinfehr/nerdtree-git-plugin'                            " Git status flags for nerd tree (own fork)
 Plug 'ryanoasis/vim-devicons'                                   " nerd tree dev icons for file types
 Plug 'luochen1990/rainbow'                                      " rainbow braces should work with yajs
 Plug 'jistr/vim-nerdtree-tabs'                                  " tabs for nerdtree

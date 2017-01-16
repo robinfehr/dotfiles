@@ -23,6 +23,8 @@ osx, iterm2, fish shell, neovim
 - make fish your default shell `chsh -s /usr/local/bin/fish`
 - download and istall neovim `https://neovim.io/`
 - setup alias for nvim to vim => see .bash_profile
+- install pyton3 `brew install python3`
+- install python3 support within neovim `pip3 install neovim`
 - setup git branch in prompt => see .brash_profile
 - copy the folders within the `config` folder to: `~/.config/`
 - install the vim plugins - see vim section below.

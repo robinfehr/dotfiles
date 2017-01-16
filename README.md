@@ -1,7 +1,7 @@
 # Dotfiles
 
 ## Setup
-osx, iterm2, fish shell, neovim
+osx, homebrew, iterm2, fish shell, neovim
 
 ## Installation Guide:
 - downlaod and install iterm2 `https://iterm2.com/`
@@ -23,7 +23,7 @@ osx, iterm2, fish shell, neovim
 - make fish your default shell `chsh -s /usr/local/bin/fish`
 - download and istall neovim `https://neovim.io/`
 - setup alias for nvim to vim => see .bash_profile
-- install pyton3 `brew install python3`
+- install python3 `brew install python3`
 - install python3 support within neovim `pip3 install neovim`
 - setup git branch in prompt => see .brash_profile
 - copy the folders within the `config` folder to: `~/.config/`

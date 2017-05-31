@@ -32,7 +32,7 @@ osx, homebrew, iterm2, fish shell, neovim
 ## Vim
 - vim-plug was used as the plugin manager. `https://github.com/junegunn/vim-plug`
 - I use my own fork of the `nerdtree-git-plugin` which colorizes the the folders like atom does.
-
+- install fzf `brew install fzf`
   in my colors file there are def's for the nerdtree plugin. in the nerdtree git plugin there must be a change of the `hi def link` lines to:
   ```
     hi def link NERDTreeGitStatusUnmerged NERDTreeGitUnmerged

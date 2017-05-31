@@ -98,6 +98,9 @@ let g:NERDTreeGitStatusNodeColorization = 1
 let g:NERDTreeMapPrevHunk = '<S-Char-9>'
 let g:NERDTreeMapNextHunk = '<Char-9>'
 
+" adding icons to ctrlp
+let g:webdevicons_enable_ctrlp = 1
+
 " adding folder icons to NERDTREE
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:DevIconsEnableFoldersOpenClose = 1
@@ -150,6 +153,7 @@ let g:kolor_bold=1                      " Enable bold. Default: 1
 let g:kolor_underlined=0                " Enable underline. Default: 0
 let g:kolor_alternative_matchparen=0    " Gray 'MatchParen' color. Default: 0
 colorscheme Tomorrow-Night-Eighties
+set termguicolors
 " Mappings {{{1
 let mapleader=" "
 let maplocalleader="\\"

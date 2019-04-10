@@ -72,7 +72,7 @@ Plug 'tpope/vim-unimpaired'                                     " Miscellaneous 
 Plug 'vim-scripts/CursorLineCurrentWindow'                      " Only show the cursorline in the active window
 Plug 'vim-scripts/syntaxudev.vim'                               " Syntax highlighting for udev rules files
 Plug 'wavded/vim-stylus'                                        " Styling of .styl fi.es
-Plug 'scrooloose/nerdtree'                                      " The well known nerd tree'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtree'                                      " The well known nerd tree'scrooloose/nerdtree'
 " Plug 'robinfehr/nerdtree-git-plugin'                            " Git status flags for nerd tree (own fork)
 Plug 'ryanoasis/vim-devicons'                                   " nerd tree dev icons for file types
 Plug 'luochen1990/rainbow'                                      " rainbow braces should work with yajs
@@ -96,17 +96,17 @@ Plug 'ludovicchabant/vim-gutentags'                             " Plugin for uni
 call plug#end()
 
 " Disable git plugin per default since we should improve the perf there.
-let g:NERDTreeShowGitStatus = 0
+" let g:NERDTreeShowGitStatus = 0
 " GitGutter staged flags
 let g:gitgutter_staged = 1
 " adding buffer tabs in airline
 let g:airline#extensions#tabline#enabled = 1
 
 " disabling the flags in the NERDTREE git plugin
-let g:NERDTreeGitStatusWithFlags = 0
-let g:NERDTreeGitStatusNodeColorization = 1
-let g:NERDTreeMapPrevHunk = '<S-Char-9>'
-let g:NERDTreeMapNextHunk = '<Char-9>'
+" let g:NERDTreeGitStatusWithFlags = 0
+" let g:NERDTreeGitStatusNodeColorization = 1
+" let g:NERDTreeMapPrevHunk = '<S-Char-9>'
+" let g:NERDTreeMapNextHunk = '<Char-9>'
 
 " adding icons to ctrlp
 " let g:webdevicons_enable_ctrlp = 1
@@ -216,8 +216,18 @@ tnoremap <C-O> <C-\><C-n><C-o>
 map <F1> <Esc>
 imap <F1> <Esc>
 " NerdTree mappings
-map <C-n> :NERDTreeToggle<CR>
-map <C-m> :NERDTreeFind<CR>
+" map <C-n> :NERDTreeToggle<CR>
+" map <C-m> :NERDTreeFind<CR>
+
+" Netrw mappings
+map <C-m> :Rex<CR>
+map <C-e> :Ex<CR>
+ca e Ex
+ca s Sex
+ca st Sex!
+ca v Vex
+ca vr Vex!
+let g:netrw_liststyle = 1
 
 "Resizing of vertical split windows
 map <C-b> :vertical resize +20<CR>
@@ -250,6 +260,6 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 " goto variable definition with gb
 autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
 " nerdtree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
